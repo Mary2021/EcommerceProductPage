@@ -1,3 +1,65 @@
+# Frontend Mentor - E-commerce product page solution
+
+This is a solution to the [E-commerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
+## Table of contents
+
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [Useful links](#useful-links)
+- [Author](#author)
+- [Getting Started with Create React App](#getting-started-with-create-react-app)
+
+**Note: Delete this note and update the table of contents based on what sections you keep.**
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Open a lightbox gallery by clicking on the large product image
+- Switch the large product image by clicking on the small thumbnail images
+- Add items to the cart
+- View the cart and remove items from it
+
+### Screenshot
+
+![](./design/desktop-preview.jpg)
+
+
+### Links
+
+- Github repo: []()
+- Live URL: []()
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [Create React App](https://create-react-app.dev/docs/getting-started). [Read more](#getting-started-with-create-react-app)
+- [React Bootstrap](https://react-bootstrap.github.io/getting-started/introduction)
+
+
+### Useful links
+
+- [React folder structure](https://blog.webdevsimplified.com/2022-07/react-folder-structure/)
+
+## Author
+
+- Website - [Mary P](https://github.com/Mary2021)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

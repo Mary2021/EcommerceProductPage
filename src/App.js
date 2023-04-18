@@ -1,24 +1,34 @@
-import logo from './logo.svg';
+import React from 'react';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
+import Container from 'react-bootstrap/esm/Container';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container fluid  className='orange'>  Collections
+    Men
+    Women
+    About
+    Contact
+  
+    Sneaker Company
+  
+    Fall Limited Edition Sneakers
+  
+    These low-profile sneakers are your perfect casual wear companion. Featuring a 
+    durable rubber outer sole, they’ll withstand everything the weather can offer.
+  
+    $125.00
+    50%
+    $250.00
+  
+    0
+    Add to cart
+    <div>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer" >Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Mary2021">Mary P</a>.
+  </div>
+  </Container>
   );
 }
 
