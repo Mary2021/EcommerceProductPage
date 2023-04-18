@@ -1,11 +1,15 @@
-import React from 'react';
+import React from 'react'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
-import Container from 'react-bootstrap/esm/Container';
+import Container from 'react-bootstrap/esm/Container'
+import NavBar from './layouts/NavBar'
+
 
 function App() {
   return (
-    <Container fluid  className='orange'>  Collections
+    <Container fluid  className='orange'>  
+    <NavBar />
+    Collections
     Men
     Women
     About

@@ -55,6 +55,7 @@ Users should be able to:
 ### Useful links
 
 - [React folder structure](https://blog.webdevsimplified.com/2022-07/react-folder-structure/)
+- (https://bobbyhadz.com/blog/react-set-global-css)
 
 ## Author
 
