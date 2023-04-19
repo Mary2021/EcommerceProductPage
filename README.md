@@ -50,12 +50,15 @@ Users should be able to:
 - Mobile-first workflow
 - [Create React App](https://create-react-app.dev/docs/getting-started). [Read more](#getting-started-with-create-react-app)
 - [React Bootstrap](https://react-bootstrap.github.io/getting-started/introduction)
+- https://react-bootstrap.netlify.app/
 
 
 ### Useful links
 
 - [React folder structure](https://blog.webdevsimplified.com/2022-07/react-folder-structure/)
 - (https://bobbyhadz.com/blog/react-set-global-css)
+- https://www.semrush.com/blog/semantic-html5-guide/
+- Carosel indicators https://stackoverflow.com/questions/34808477/can-i-customize-carousel-indicators-in-react-bootstrap 
 
 ## Author
 

@@ -1,7 +1,16 @@
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 576px) {
   div.hidden {
     visibility: hidden;
   }
   div.visible {
     visibility: visible;}
 }
+
+@media only screen and (max-width: 768px) {
+  div.hidden {
+    visibility: hidden;
+  }
+  div.visible {
+    visibility: visible;}
+}
+
