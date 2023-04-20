@@ -2,15 +2,36 @@
   div.hidden {
     visibility: hidden;
   }
+
   div.visible {
-    visibility: visible;}
+    visibility: visible;
+  }
+
+  .badgeColor {
+    color: hsl(26, 100%, 55%);
+    background:hsl(25, 100%, 94%);
+  }
+
+  .cartBtn {
+    background-color: hsl(26, 100%, 55%);
+    border-color: hsl(26, 100%, 55%);
+  }
+
+  .cartImg {
+    filter: invert(1) brightness(2);
+    /* filter: brightness(0.24) sepia(10%) saturate(40000%) hue-rotate(167deg) invert(20%) contrast(100%);
+    color: hsl(167, 40%, 24%);
+    color: hsl(0, 0%, 100%);*/
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
   div.hidden {
     visibility: hidden;
   }
-  div.visible {
-    visibility: visible;}
-}
 
+  div.visible {
+    visibility: visible;
+  }
+}
