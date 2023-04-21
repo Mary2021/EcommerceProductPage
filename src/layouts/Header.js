@@ -33,7 +33,7 @@ const Header = () => {
 
     if (window.outerWidth >= 500) {
         return (
-            <header className='Menu'>
+            <header className='headerContainer'>
                 <Container fluid>
                     <Row>
                         <Col>
@@ -59,10 +59,10 @@ const Header = () => {
                             </Nav>
                         </Col>
                         <Col>
-                            <Image src={cart} alt='cart icon' className='Cart' />
+                            <Image src={cart} alt='cart icon' />
                         </Col>
                         <Col>
-                            <Image src={avatar} alt='avatar icon' className='Avatar' />
+                            <Image src={avatar} alt='avatar icon' />
                         </Col>
                     </Row>
                 </Container>
@@ -71,15 +71,25 @@ const Header = () => {
         )
     } else {
         return (
-            <header className='Menu'>
-                <Image src={menu} className="MenuIcon" alt="MenuIcon" onClick={handleShow} />
-                <Image src={logo} alt='Sneakers logo' className='Logo' />
-                <Image src={cart} alt='cart icon' className='Cart' />
-                <Image fluid={true} src={avatar} alt='avatar icon' className='Avatar' />
+            <header className='headerContainer'>
+                <Row className='justify-content-center align-items-center'>
+                    <Col className='pe-0'>
+                        <Image src={menu} alt="Menu icon" onClick={handleShow} />
+                    </Col>
+                    <Col className='col-8 p-0'>
+                        <Image src={logo} alt='Sneakers logo' />
+                    </Col>
+                    <Col className='ps-0'>
+                        <Image src={cart} alt='cart icon' />
+                    </Col>
+                    <Col className='ps-0 pe-0'>
+                        <Image fluid={true} src={avatar} alt='avatar icon' className='avatar' />
+                    </Col>
+                </Row>
                 <Offcanvas show={show} className='w-75'>
                     <Offcanvas.Body>
-                        <Image src={close} className="CloseIcon" alt="CloseIcon" onClick={handleClose} />
-                        <Nav defaultActiveKey="/home" className="flex-column">
+                        <Image src={close} alt="Close icon" onClick={handleClose} />
+                        <Nav defaultActiveKey="/home" className="flex-column pt-4">
                             <Nav.Link >Collections</Nav.Link>
                             <Nav.Link>Men</Nav.Link>
                             <Nav.Link>Women</Nav.Link>

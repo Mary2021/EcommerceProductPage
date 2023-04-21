@@ -1,4 +1,12 @@
 @media only screen and (max-width: 576px) {
+  /* header and nav */
+  .headerContainer{
+    padding: 20px;
+  }
+  .avatar {
+    height: 1.5rem;
+  }
+
   div.hidden {
     visibility: hidden;
   }
@@ -6,6 +14,20 @@
   div.visible {
     visibility: visible;
   }
+
+  .nav-link {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: bold;
+    color: hsl(0, 0%, 0%);
+  }
+
+  .nav-link:focus{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: bold;
+    color: hsl(26, 100%, 55%); 
+  }
+
+  /* main */
 
   .badgeColor {
     color: hsl(26, 100%, 55%);
@@ -19,15 +41,14 @@
 
   .cartImg {
     filter: invert(1) brightness(2);
-    /* filter: brightness(0.24) sepia(10%) saturate(40000%) hue-rotate(167deg) invert(20%) contrast(100%);
-    color: hsl(167, 40%, 24%);
-    color: hsl(0, 0%, 100%);*/
   }
 
-}
+  /* footer */
 
-@media only screen and (max-width: 576px) {
-  
+  .footerContainer{ 
+    padding: 20px;
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 768px) {

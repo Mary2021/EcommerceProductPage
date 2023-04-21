@@ -9,12 +9,10 @@ import Main from './layouts/Main'
 function App() {
   return (
     <Container fluid className='p-0'>
-      <Container>
       <Header />
-      </Container>
       <Main />
       <Container>
-        <footer>
+        <footer className='footerContainer'>
           Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer" >Frontend Mentor</a>.
           Coded by <a href="https://github.com/Mary2021">Mary P</a>.
         </footer>
