@@ -66,6 +66,7 @@ const Header = () => {
                         </Col>
                     </Row>
                 </Container>
+                <hr />
             </header>
         )
     } else {

@@ -26,6 +26,10 @@
 
 }
 
+@media only screen and (max-width: 576px) {
+  
+}
+
 @media only screen and (max-width: 768px) {
   div.hidden {
     visibility: hidden;
@@ -34,4 +38,20 @@
   div.visible {
     visibility: visible;
   }
+}
+
+@media only screen and (min-width: 769px) {
+  
+  .carousel-indicators {
+    top: 95%;
+  }
+
+  .carousel-indicators button{
+    /* background-color: red!important; */
+    background-image: url('./images/image-product-1-thumbnail.jpg') !important;
+    width: 100px!important;
+    height: 100px!important;
+    border-radius: 20%;
+    }
+
 }
