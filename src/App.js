@@ -8,7 +8,7 @@ import Main from './layouts/Main'
 
 function App() {
   return (
-    <Container fluid className='p-0'>
+    <Container className='appContainer p-0'>
       <Header />
       <Main />
       <Container>

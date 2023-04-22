@@ -28,6 +28,19 @@
   }
 
   /* main */
+  .carousel-control-prev-icon { 
+    background-image: url('./images/icon-previous.svg');
+    background-size: 25%; 
+  }
+  .carousel-control-next-icon {
+    background-image: url('./images/icon-next.svg');
+    background-size: 25%; 
+  }
+
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 100%;
+  }
 
   .badgeColor {
     color: hsl(26, 100%, 55%);
@@ -62,7 +75,33 @@
 }
 
 @media only screen and (min-width: 769px) {
-  
+
+  .appContainer{
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+  }
+
+  /* header */
+  .headerContainer{
+    padding-top: 30px;
+    padding-bottom: 5px;
+  }
+
+  .navLink {
+    color: hsl(0, 0%, 0%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+  }
+
+  .cartIcon {
+    padding-right: 20%;
+  }
+
+  .avatar {
+    height: 2rem;
+  }
+
+  /* main */
   .carousel-indicators {
     top: 95%;
   }

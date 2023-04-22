@@ -4,7 +4,7 @@ import logo from './../images/logo.svg'
 import cart from './../images/icon-cart.svg'
 import avatar from './../images/image-avatar.png'
 import close from './../images/icon-close.svg'
-import { Nav, Container, Image, Row, Col, Offcanvas } from 'react-bootstrap'
+import { Nav, Image, Row, Col, Offcanvas, Container } from 'react-bootstrap'
 
 const Header = () => {
     const [show, setShow] = useState(false);
@@ -33,38 +33,39 @@ const Header = () => {
 
     if (window.outerWidth >= 500) {
         return (
-            <header className='headerContainer'>
-                <Container fluid>
-                    <Row>
-                        <Col>
-                            <Image src={logo} alt='Sneakers logo' className='Logo' />
-                        </Col>
-                        <Col md='auto'>
-                            <Nav defaultActiveKey="/home" as="ul">
-                                <Nav.Item as="li">
-                                    <Nav.Link href="/home">Collections</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item as="li">
-                                    <Nav.Link eventKey="link-1">Men</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item as="li">
-                                    <Nav.Link eventKey="link-2">Women</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item as="li">
-                                    <Nav.Link eventKey="link-2">About</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item as="li">
-                                    <Nav.Link eventKey="link-2">Contact</Nav.Link>
-                                </Nav.Item>
-                            </Nav>
-                        </Col>
-                        <Col>
-                            <Image src={cart} alt='cart icon' />
-                        </Col>
-                        <Col>
-                            <Image src={avatar} alt='avatar icon' />
-                        </Col>
-                    </Row>
+            <header >
+                <Container className='headerContainer ps-0 pe-0'>
+                <Row>
+                    <Col md={3} lg={3} xl={2}>
+                        <Image src={logo} alt='Sneakers logo' className='Logo' />
+                    </Col>
+                    <Col md={8} lg={8} xl={9} className='pe-0'>
+                        <Nav defaultActiveKey="/home" as="ul">
+                            <Nav.Item as="li">
+                                <Nav.Link href="/home" className='navLink'>Collections</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item as="li">
+                                <Nav.Link eventKey="link-1" className='navLink'>Men</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item as="li">
+                                <Nav.Link eventKey="link-2" className='navLink'>Women</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item as="li">
+                                <Nav.Link eventKey="link-2" className='navLink'>About</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item as="li">
+                                <Nav.Link eventKey="link-2" className='navLink'>Contact</Nav.Link>
+                            </Nav.Item>
+                        </Nav>
+                    </Col>
+                    <Col md={1} lg={1} xl={1} className='ps-0 pe-0'>
+                        <Image src={cart} alt='cart icon' className='cartIcon' />
+                        <Image src={avatar} alt='avatar icon' className='avatar' />
+                    </Col>
+                    {/* <Col xl={1}>
+                        <Image src={avatar} alt='avatar icon' className='avatar' />
+                    </Col> */}
+                </Row>
                 </Container>
                 <hr />
             </header>
