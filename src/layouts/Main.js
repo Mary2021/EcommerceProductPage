@@ -140,7 +140,7 @@ const Main = () => {
                         </Container>
                     </figure>
                     <Container>
-                        <h6 className='orange'>
+                        <h6 className='orange companyName'>
                             Sneaker Company
                         </h6>
                         <h1>

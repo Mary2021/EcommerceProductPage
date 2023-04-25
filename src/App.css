@@ -42,6 +42,13 @@
     border-radius: 100%;
   }
 
+  .companyName {
+    text-transform: uppercase;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+  }
+
   .lowerPrice {
     font-family: 'Kumbh Sans', sans-serif;
     font-weight: bolder;
