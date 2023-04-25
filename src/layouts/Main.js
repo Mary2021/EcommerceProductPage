@@ -150,11 +150,11 @@ const Main = () => {
                             These low-profile sneakers are your perfect casual wear companion. Featuring a
                             durable rubber outer sole, they`ll withstand everything the weather can offer.
                         </p>
-                        <div>
-                            $125.00
-                            <Badge className='badgeColor' bg='false'>50%</Badge>
-                            $250.00
-                        </div>
+                        <Row className='ms-0 me-0 mb-3 align-items-center'>
+                            <Col xs={3} className='lowerPrice'>$125.00</Col>
+                            <Col xs={7}><Badge className='badge' bg='false'>50%</Badge></Col>
+                            <Col xs={2} className='regularPrice'>$250.00</Col>
+                        </Row>
                         <div>
                             <ButtonGroup className="mb-2 w-100">
                                 <Button className='bg-light border-light'><img src={minus}></img></Button>
