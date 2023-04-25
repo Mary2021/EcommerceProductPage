@@ -156,13 +156,13 @@ const Main = () => {
                             <Col xs={2} className='regularPrice'>$250.00</Col>
                         </Row>
                         <div>
-                            <ButtonGroup className="mb-2 w-100">
+                            <ButtonGroup className="mb-2 w-100" size="lg">
                                 <Button className='bg-light border-light'><img src={minus}></img></Button>
-                                <InputGroup.Text id="btnGroupAddon2" className="square rounded-0 bg-light  border-light">0</InputGroup.Text>
+                                <InputGroup.Text id="btnGroupAddon2" className="square rounded-0 bg-light border-light w-75 quantity">0</InputGroup.Text>
                                 <Button className='bg-light border-light'><img src={plus}></img></Button>
                             </ButtonGroup>
                         </div>
-                        <Button className='cartBtn w-100'>
+                        <Button className='cartBtn w-100' size="lg">
                             <Image src={cart} alt='cart icon' className='cartImg' />Add to cart
                         </Button>
                     </Container>
