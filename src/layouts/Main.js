@@ -30,78 +30,85 @@ const Main = () => {
     })
 
     if (window.outerWidth >= 500) {
-        return (<main>
-            <article>
-                <Container>
-                    <Row>
-                        <Col>
-                            <figure>
-                                <Container className='p-0'>
-                                    <Carousel >
-                                        <Carousel.Item>
-                                            <img
-                                                className="w-100"
-                                                src={pic1}
-                                                alt="First slide"
-                                            />
-                                        </Carousel.Item>
-                                        <Carousel.Item>
-                                            <img
-                                                className="w-100"
-                                                src={pic2}
-                                                alt="First slide"
-                                            />
-                                        </Carousel.Item><Carousel.Item>
-                                            <img
-                                                className="w-100"
-                                                src={pic3}
-                                                alt="First slide"
-                                            />
-                                        </Carousel.Item>
-                                        <Carousel.Item>
-                                            <img
-                                                className="w-100"
-                                                src={pic4}
-                                                alt="First slide"
-                                            />
-                                        </Carousel.Item>
-                                    </Carousel>
+        return (
+            <main className='mainContainer'>
+                <article>
+                    <Container>
+                        <Row>
+                            <Col>
+                                <figure>
+                                    <Container className='p-0 w-75'>
+                                        <Carousel controls={false} interval={null}>
+                                            <Carousel.Item>
+                                                <img
+                                                    className="w-100"
+                                                    src={pic1}
+                                                    alt="First slide"
+                                                />
+                                            </Carousel.Item>
+                                            <Carousel.Item>
+                                                <img
+                                                    className="w-100"
+                                                    src={pic2}
+                                                    alt="First slide"
+                                                />
+                                            </Carousel.Item><Carousel.Item>
+                                                <img
+                                                    className="w-100"
+                                                    src={pic3}
+                                                    alt="First slide"
+                                                />
+                                            </Carousel.Item>
+                                            <Carousel.Item>
+                                                <img
+                                                    className="w-100"
+                                                    src={pic4}
+                                                    alt="First slide"
+                                                />
+                                            </Carousel.Item>
+                                        </Carousel>
+                                    </Container>
+                                </figure>
+                            </Col>
+                            <Col>
+                                <Container className='productInfo'>
+                                    <h6 className='orange companyName'>
+                                        Sneaker Company
+                                    </h6>
+                                    <h1 className='productHeading'>
+                                        Fall Limited Edition Sneakers
+                                    </h1>
+                                    <p className='productText'>
+                                        These low-profile sneakers are your perfect casual wear companion. Featuring a
+                                        durable rubber outer sole, they`ll withstand everything the weather can offer.
+                                    </p>
+                                    <Row className='ms-0 me-0 mb-2 align-items-center'>
+                                        <Col lg={3} xl={2} className='lowerPrice'>$125.00</Col>
+                                        <Col lg={2} xl={2}><Badge className='badge' bg='false'>50%</Badge></Col>
+                                    </Row>
+                                    <Row className='ms-0 me-0 mb-4 align-items-center regularPrice'>$250.00</Row>
+                                    <Row>
+                                        <Col lg={5} xl={4}>
+                                            <div>
+                                                <ButtonGroup className="mb-2 w-100" size="lg">
+                                                    <Button className='bg-light border-light'><img src={minus}></img></Button>
+                                                    <InputGroup.Text id="btnGroupAddon2" className="square rounded-0 bg-light  border-light">0</InputGroup.Text>
+                                                    <Button className='bg-light border-light'><img src={plus}></img></Button>
+                                                </ButtonGroup>
+                                            </div>
+                                        </Col>
+                                        <Col lg={7} xl={8} >
+                                            <Button className='cartBtn w-100' size="lg">
+                                                <Image src={cart} alt='cart icon' className='cartImg' />Add to cart
+                                            </Button>
+                                        </Col>
+                                    </Row>
                                 </Container>
-                            </figure>
-                        </Col>
-                        <Col>
-                            <Container>
-                                <h6 className='orange'>
-                                    Sneaker Company
-                                </h6>
-                                <h1>
-                                    Fall Limited Edition Sneakers
-                                </h1>
-                                <p>
-                                    These low-profile sneakers are your perfect casual wear companion. Featuring a
-                                    durable rubber outer sole, they`ll withstand everything the weather can offer.
-                                </p>
-                                <div>
-                                    $125.00
-                                    <Badge className='badgeColor' bg='false'>50%</Badge>
-                                    $250.00
-                                </div>
-                                <div>
-                                    <ButtonGroup className="mb-2 w-100">
-                                        <Button className='bg-light border-light'><img src={minus}></img></Button>
-                                        <InputGroup.Text id="btnGroupAddon2" className="square rounded-0 bg-light  border-light">0</InputGroup.Text>
-                                        <Button className='bg-light border-light'><img src={plus}></img></Button>
-                                    </ButtonGroup>
-                                </div>
-                                <Button className='cartBtn w-100'>
-                                    <Image src={cart} alt='cart icon' className='cartImg' />Add to cart
-                                </Button>
-                            </Container>
-                        </Col>
-                    </Row>
-                </Container>
-            </article>
-        </main>)
+                            </Col>
+                        </Row>
+                    </Container>
+                </article>
+            </main>)
     } else {
         return (
             <main>
