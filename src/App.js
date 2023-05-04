@@ -5,7 +5,6 @@ import Container from 'react-bootstrap/esm/Container'
 import Header from './layouts/Header'
 import Main from './layouts/Main'
 
-
 function App() {
   return (
     <Container className='appContainer p-0'>

@@ -29,15 +29,15 @@ const Main = () => {
         }
     })
 
-    if (window.outerWidth >= 500) {
+    if (window.outerWidth >= 768) {
         return (
             <main className='mainContainer'>
                 <article>
                     <Container>
                         <Row>
-                            <Col>
+                            <Col md={5}>
                                 <figure>
-                                    <Container className='p-0 w-75'>
+                                    <Container className='p-0 w-75 ms-2 me-2 tabletFigure'>
                                         <Carousel controls={false} interval={null}>
                                             <Carousel.Item>
                                                 <img
@@ -70,7 +70,7 @@ const Main = () => {
                                     </Container>
                                 </figure>
                             </Col>
-                            <Col>
+                            <Col md={7}>
                                 <Container className='productInfo'>
                                     <h6 className='orange companyName'>
                                         Sneaker Company
@@ -83,12 +83,12 @@ const Main = () => {
                                         durable rubber outer sole, they`ll withstand everything the weather can offer.
                                     </p>
                                     <Row className='ms-0 me-0 mb-2 align-items-center'>
-                                        <Col lg={3} xl={2} className='lowerPrice'>$125.00</Col>
-                                        <Col lg={2} xl={2}><Badge className='badge' bg='false'>50%</Badge></Col>
+                                        <Col md={3} lg={3} xl={2} className='lowerPrice'>$125.00</Col>
+                                        <Col md={2} lg={2} xl={2}><Badge className='badge' bg='false'>50%</Badge></Col>
                                     </Row>
                                     <Row className='ms-0 me-0 mb-4 align-items-center regularPrice'>$250.00</Row>
                                     <Row>
-                                        <Col lg={5} xl={4}>
+                                        <Col md={5} lg={5} xl={4}>
                                             <div>
                                                 <ButtonGroup className="mb-2 w-100" size="lg">
                                                     <Button className='bg-light border-light'><img src={minus}></img></Button>
@@ -97,7 +97,7 @@ const Main = () => {
                                                 </ButtonGroup>
                                             </div>
                                         </Col>
-                                        <Col lg={7} xl={8} >
+                                        <Col md={7} lg={7} xl={8} >
                                             <Button className='cartBtn w-100' size="lg">
                                                 <Image src={cart} alt='cart icon' className='cartImg' />Add to cart
                                             </Button>
