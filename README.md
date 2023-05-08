@@ -62,6 +62,7 @@ Users should be able to:
 - https://mdbootstrap.com/docs/react/utilities/borders/
 - https://mdbootstrap.com/docs/react/utilities/borders/
 - https://stackoverflow.com/questions/34808477/can-i-customize-carousel-indicators-in-react-bootstrap
+- https://www.youtube.com/watch?v=hVeXkSCuu5k
 
 ## Author
 

@@ -189,7 +189,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .appContainer{
     margin-left: 2rem !important;
     margin-right: 2rem !important;
@@ -240,13 +240,6 @@
     top: 105%;
     margin: 0%;
     border: 0.1em !important;
-    /* border-top: 100px !important;
-    border-style: solid;
-    border-color: transparent; */
-    /* border-top: 0px!important; */
-    /* border-top: unset;
-    border-bottom: unset;
-    border: 1px solid transparent; */
   }
 
   .carousel-indicators .active {
@@ -257,13 +250,30 @@
   }
 
   .carousel-indicators button{
-    /* background-color: red!important; */
-    background-image: url('./images/image-product-1-thumbnail.jpg') !important;
+    background-size: cover;
+    background-position: center;
     width: 8dvw!important;
     height:8dvh!important;
     border-radius: 20%;
+    border: 0.1em solid transparent!important;
     opacity: 1!important;
     }
+
+  #btn1 {
+    background-image: url('./images/image-product-1-thumbnail.jpg') !important;
+  }
+
+  #btn2 {
+    background-image: url('./images/image-product-2-thumbnail.jpg') !important;
+  }
+
+  #btn3 {
+    background-image: url('./images/image-product-3-thumbnail.jpg') !important;
+  }
+
+  #btn4 {
+    background-image: url('./images/image-product-4-thumbnail.jpg') !important;
+  }
 
   .productInfo {
     padding-top: 5%;
@@ -326,7 +336,7 @@
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .appContainer{
     margin-left: 2rem !important;
     padding-right: 2rem !important;
@@ -364,31 +374,38 @@
   .carousel-indicators {
     top: 105%;
     margin: 0%;
-    border: 0.1em !important;
-    /* border-top: 100px !important;
-    border-style: solid;
-    border-color: transparent; */
-    /* border-top: 0px!important; */
-    /* border-top: unset;
-    border-bottom: unset;
-    border: 1px solid transparent; */
+  }
+
+  .carousel-indicators button{
+    background-size: cover;
+    background-position: center;
+    width: 8dvw!important;
+    height:8dvh!important;
+    border-radius: 20%;
+    border: 0.1em solid transparent!important;
+    opacity: 1!important;
+  }
+
+  #btn1 {
+    background-image: url('./images/image-product-1-thumbnail.jpg') !important;
+  }
+
+  #btn2 {
+    background-image: url('./images/image-product-2-thumbnail.jpg') !important;
+  }
+
+  #btn3 {
+    background-image: url('./images/image-product-3-thumbnail.jpg') !important;
+  }
+
+  #btn4 {
+    background-image: url('./images/image-product-4-thumbnail.jpg') !important;
   }
 
   .carousel-indicators .active {
     opacity: 0.3!important;
-    border: 0.1em;
-    border-style: solid;
-    border-color: hsl(26, 100%, 55%);
+    border: 0.1em solid hsl(26, 100%, 55%, 1.0) !important;
   }
-
-  .carousel-indicators button{
-    /* background-color: red!important; */
-    background-image: url('./images/image-product-1-thumbnail.jpg') !important;
-    width: 8dvw!important;
-    height:8dvh!important;
-    border-radius: 20%;
-    opacity: 1!important;
-    }
 
   .productInfo {
     padding-top: 5%;
@@ -449,7 +466,7 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .appContainer{
     padding-left: 2rem !important;
     padding-right: 2rem !important;
@@ -487,31 +504,38 @@
   .carousel-indicators {
     top: 105%;
     margin: 0%;
-    border: 0.1em !important;
-    /* border-top: 100px !important;
-    border-style: solid;
-    border-color: transparent; */
-    /* border-top: 0px!important; */
-    /* border-top: unset;
-    border-bottom: unset;
-    border: 1px solid transparent; */
+  }
+
+  .carousel-indicators button{
+    background-size: cover;
+    background-position: center;
+    width: 8dvw!important;
+    height:8dvh!important;
+    border-radius: 20%;
+    border: 0.1em solid transparent!important;
+    opacity: 1!important;
+  }
+
+  #btn1 {
+    background-image: url('./images/image-product-1-thumbnail.jpg') !important;
+  }
+
+  #btn2 {
+    background-image: url('./images/image-product-2-thumbnail.jpg') !important;
+  }
+
+  #btn3 {
+    background-image: url('./images/image-product-3-thumbnail.jpg') !important;
+  }
+
+  #btn4 {
+    background-image: url('./images/image-product-4-thumbnail.jpg') !important;
   }
 
   .carousel-indicators .active {
     opacity: 0.3!important;
-    border: 0.1em;
-    border-style: solid;
-    border-color: hsl(26, 100%, 55%);
+    border: 0.1em solid hsl(26, 100%, 55%, 1.0)!important;
   }
-
-  .carousel-indicators button{
-    /* background-color: red!important; */
-    background-image: url('./images/image-product-1-thumbnail.jpg') !important;
-    width: 8dvw!important;
-    height:8dvh!important;
-    border-radius: 20%;
-    opacity: 1!important;
-    }
 
   .productInfo {
     padding-top: 15%;
@@ -610,31 +634,38 @@
   .carousel-indicators {
     top: 105%;
     margin: 0%;
-    border: 0.1em !important;
-    /* border-top: 100px !important;
-    border-style: solid;
-    border-color: transparent; */
-    /* border-top: 0px!important; */
-    /* border-top: unset;
-    border-bottom: unset;
-    border: 1px solid transparent; */
+  }
+
+  .carousel-indicators button { 
+    background-size: cover;
+    background-position: center;
+    width: 8dvw!important;
+    height:8dvh!important;
+    border: 0.2em solid transparent!important;
+    border-radius: 20%;
+    opacity: 1!important;
+    }
+
+  #btn1 {
+    background-image: url('./images/image-product-1-thumbnail.jpg') !important;
+  }
+
+  #btn2 {
+    background-image: url('./images/image-product-2-thumbnail.jpg') !important;
+  }
+
+  #btn3 {
+    background-image: url('./images/image-product-3-thumbnail.jpg') !important;
+  }
+
+  #btn4 {
+    background-image: url('./images/image-product-4-thumbnail.jpg') !important;
   }
 
   .carousel-indicators .active {
     opacity: 0.3!important;
-    border: 0.1em;
-    border-style: solid;
-    border-color: hsl(26, 100%, 55%);
+    border: 0.2em solid hsl(26, 100%, 55%, 1.0)!important;
   }
-
-  .carousel-indicators button{
-    /* background-color: red!important; */
-    background-image: url('./images/image-product-1-thumbnail.jpg') !important;
-    width: 8dvw!important;
-    height:8dvh!important;
-    border-radius: 20%;
-    opacity: 1!important;
-    }
 
   .productInfo {
     padding-top: 15%;
