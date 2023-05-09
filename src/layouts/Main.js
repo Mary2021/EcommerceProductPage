@@ -30,16 +30,25 @@ const Main = () => {
     })
 
     if (window.outerWidth >= 768) {
+        //set carousel indicator button background image with element id
         let element1 = document.querySelector('[aria-label="btn1"]')
         let element2 = document.querySelector('[aria-label="btn2"]')
         let element3 = document.querySelector('[aria-label="btn3"]')
         let element4 = document.querySelector('[aria-label="btn4"]')
-        console.log(element1)
-        console.log(element2)
-        element1.setAttribute('id','btn1')
-        element2.setAttribute('id','btn2')
-        element3.setAttribute('id','btn3')
-        element4.setAttribute('id','btn4')
+
+        if (element1!=null) {
+            element1.setAttribute('id','btn1')
+        }
+        if ((element2!=null)) {
+            element2.setAttribute('id','btn2')
+        }
+        if ((element3!=null)) {
+            element3.setAttribute('id','btn3')
+        }
+        if ((element4!=null)) {
+            element4.setAttribute('id','btn4')
+        }
+
         return (
             <main className='mainContainer'>
                 <article>
