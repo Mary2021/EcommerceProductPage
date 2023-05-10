@@ -14,8 +14,6 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
 - [Author](#author)
 - [Getting Started with Create React App](#getting-started-with-create-react-app)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -23,9 +21,11 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
 Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Open a lightbox gallery by clicking on the large product image
 - Switch the large product image by clicking on the small thumbnail images
+
+Yet to come features:
+- Users can see hover states for all interactive elements on the page
+- Open a lightbox gallery by clicking on the large product image
 - Add items to the cart
 - View the cart and remove items from it
 
@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Github repo: []()
-- Live URL: []()
+- [Github repo](https://github.com:Mary2021/EcommerceProductPage.git)
+- [Live URL](https://mary2021.github.io/EcommerceProductPage/)
 
 ## My process
 
@@ -45,24 +45,19 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
-- CSS Grid
 - Mobile-first workflow
 - [Create React App](https://create-react-app.dev/docs/getting-started). [Read more](#getting-started-with-create-react-app)
-- [React Bootstrap](https://react-bootstrap.github.io/getting-started/introduction)
-- https://react-bootstrap.netlify.app/
+- [React Bootstrap](https://react-bootstrap.github.io/getting-started/introduction), [See also](https://react-bootstrap.netlify.app/)
 
 
 ### Useful links
 
 - [React folder structure](https://blog.webdevsimplified.com/2022-07/react-folder-structure/)
-- (https://bobbyhadz.com/blog/react-set-global-css)
-- https://www.semrush.com/blog/semantic-html5-guide/
-- Carosel indicators https://stackoverflow.com/questions/34808477/can-i-customize-carousel-indicators-in-react-bootstrap 
-- https://mdbootstrap.com/docs/react/utilities/borders/
-- https://mdbootstrap.com/docs/react/utilities/borders/
-- https://stackoverflow.com/questions/34808477/can-i-customize-carousel-indicators-in-react-bootstrap
-- https://www.youtube.com/watch?v=hVeXkSCuu5k
+- [React set global css](https://bobbyhadz.com/blog/react-set-global-css)
+- [Semantic html5 guide](https://www.semrush.com/blog/semantic-html5-guide/)
+- [Carosel indicators](https://stackoverflow.com/questions/34808477/can-i-customize-carousel-indicators-in-react-bootstrap) 
+- [React border component](https://mdbootstrap.com/docs/react/utilities/borders/)
+- [How to Customize the React Carousel Component](https://www.youtube.com/watch?v=hVeXkSCuu5k)
 
 ## Author
 
