@@ -29,26 +29,29 @@ const Main = () => {
         }
     })
 
+    //get carousel indicator button by aria-label, set id to button element and set background image with id
+    useEffect(() => {
+    let element1 = document.querySelector('[aria-label="Slide 1"]')
+    let element2 = document.querySelector('[aria-label="Slide 2"]')
+    let element3 = document.querySelector('[aria-label="Slide 3"]')
+    let element4 = document.querySelector('[aria-label="Slide 4"]')
+
+    if (element1!=null && window.outerWidth >= 768 ) {
+        element1.setAttribute('id','btn1')
+    }
+    if ((element2!=null && window.outerWidth >= 768 )) {
+        element2.setAttribute('id','btn2')
+    }
+    if ((element3!=null && window.outerWidth >= 768 )) {
+        element3.setAttribute('id','btn3')
+    }
+    if ((element4!=null && window.outerWidth >= 768 )) {
+        element4.setAttribute('id','btn4')
+    }
+    console.log(element1)
+    })
+
     if (window.outerWidth >= 768) {
-        //set carousel indicator button background image with element id
-        let element1 = document.querySelector('[aria-label="btn1"]')
-        let element2 = document.querySelector('[aria-label="btn2"]')
-        let element3 = document.querySelector('[aria-label="btn3"]')
-        let element4 = document.querySelector('[aria-label="btn4"]')
-
-        if (element1!=null) {
-            element1.setAttribute('id','btn1')
-        }
-        if ((element2!=null)) {
-            element2.setAttribute('id','btn2')
-        }
-        if ((element3!=null)) {
-            element3.setAttribute('id','btn3')
-        }
-        if ((element4!=null)) {
-            element4.setAttribute('id','btn4')
-        }
-
         return (
             <main className='mainContainer'>
                 <article>
@@ -57,7 +60,7 @@ const Main = () => {
                             <Col md={5}>
                                 <figure>
                                     <Container className='p-0 w-75 ms-2 me-2 tabletFigure'>
-                                        <Carousel controls={false} interval={null} indicatorLabels={['btn1', 'btn2', 'btn3', 'btn4']}>
+                                        <Carousel controls={false} interval={null} >
                                             <Carousel.Item>
                                                 <img
                                                     className="w-100"

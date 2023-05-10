@@ -15,7 +15,6 @@ const Header = () => {
         let placement = ''
         if (window.outerWidth > 577 && window.outerWidth < 768) {
             placement = 'top'
-            console.log(placement)
             return placement
         } else {
             placement = 'start'
@@ -27,7 +26,6 @@ const Header = () => {
         let classname = ''
         if (window.outerWidth > 577 && window.outerWidth < 767) {
             classname = 'w-100'
-            console.log(classname)
             return classname
         } else {
             classname = 'w-75'
