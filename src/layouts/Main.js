@@ -48,7 +48,6 @@ const Main = () => {
     if ((element4!=null && window.outerWidth >= 768 )) {
         element4.setAttribute('id','btn4')
     }
-    console.log(element1)
     })
 
     if (window.outerWidth >= 768) {

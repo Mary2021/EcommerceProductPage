@@ -78,7 +78,7 @@
 
   .cartBtn {
     background-color: hsl(26, 100%, 55%);
-    border-color: hsl(26, 100%, 55%);
+    border-style: none;
   }
 
   .cartImg {
@@ -174,7 +174,7 @@
 
   .cartBtn {
     background-color: hsl(26, 100%, 55%);
-    border-color: hsl(26, 100%, 55%);
+    border-style: none;
   }
 
   .cartImg {
@@ -319,7 +319,7 @@
 
   .cartBtn {
     background-color: hsl(26, 100%, 55%);
-    border-color: hsl(26, 100%, 55%);
+    border-style: none;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
@@ -451,7 +451,7 @@
 
   .cartBtn {
     background-color: hsl(26, 100%, 55%);
-    border-color: hsl(26, 100%, 55%);
+    border-style: none;
   }
 
   .cartImg {
@@ -581,7 +581,7 @@
 
   .cartBtn {
     background-color: hsl(26, 100%, 55%);
-    border-color: hsl(26, 100%, 55%);
+    border-style: none;
   }
 
   .cartImg {
@@ -620,6 +620,66 @@
 
   .avatar {
     height: 2rem;
+  }
+
+  /* cart modal */
+  .modal-backdrop.show {
+    opacity: 0;
+  }
+
+  .modal-content {
+    width: 70%; 
+    height: 30vh;
+  }
+
+  .modal.show {
+    position: relative;
+    top: -670px;
+    left: 500px;
+  }
+
+  .modal-body {
+    display: grid;
+  }
+
+  .modal-title{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size:medium;
+    font-weight: bold;
+  }
+
+  .modalRow {
+    align-items: center;
+    padding-bottom: 7%;
+  }
+
+  .modalThumbCol {
+    padding-right: 0%;
+    text-align: start;
+  }
+
+  .modalThumb {
+    width: 80%;
+    border-radius: 10%;
+  }
+
+  .modalText {
+    text-align: start;
+    padding-right: 0%;
+    padding-left: 0%;
+    font-family: 'Kumbh Sans', sans-serif;
+  }
+
+  .modalDelBtn {
+    padding-left: 1%;
+    padding-right: 0%;
+  }
+
+  .modalCheckoutBtn{
+    width: 100%;
+    height: 80%;
+    background-color: hsl(26, 100%, 55%, 1.0);
+    border-style: none;
   }
 
   /* main */
@@ -711,7 +771,7 @@
 
   .cartBtn {
     background-color: hsl(26, 100%, 55%);
-    border-color: hsl(26, 100%, 55%);
+    border-style: none;
   }
 
   .cartImg {
