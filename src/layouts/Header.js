@@ -26,9 +26,9 @@ const Header = () => {
             </Modal.Header>
             <Modal.Body>
                 <Row className='modalRow'>
-                    <Col xl={3} className='modalThumbCol'><Image src={thumb} alt='Delete button' className='modalThumb' /></Col>
-                    <Col xl={8} className='modalText'>Fall Limited Edition Sneakers $125.00</Col>
-                    <Col xl={1} className='modalDelBtn'><Image src={del} alt='Delete button' /></Col>
+                    <Col xs={3} sm={2} md={3} lg={3} xl={3} className='modalThumbCol'><Image src={thumb} alt='Delete button' className='modalThumb' /></Col>
+                    <Col xs={7} sm={6} md={8} lg={8} xl={8} className='modalText'>Fall Limited Edition Sneakers $125.00</Col>
+                    <Col xs={1} sm={1} md={1} lg={1} xl={1} className='modalDelBtn'><Image src={del} alt='Delete button' /></Col>
                 </Row>
                 <Button variant="primary" onClick={handleHide} className='modalCheckoutBtn'>
                     Checkout
