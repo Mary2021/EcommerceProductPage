@@ -118,7 +118,7 @@ const Main = () => {
                                                 </ButtonGroup>
                                             </div>
                                         </Col>
-                                        <Col md={7} lg={7} xl={8} >
+                                        <Col md={7} lg={7} xl={8}>
                                             <Button className='cartBtn w-100' size="lg">
                                                 <Image src={cart} alt='cart icon' className='cartImg' />Add to cart
                                             </Button>

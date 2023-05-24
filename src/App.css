@@ -9,6 +9,12 @@
     height: 1.5rem;
   }
 
+  .avatar:active {
+    border: solid;
+    border-radius: 90%;
+    border-color: hsl(26, 100%, 55%, 1.0);
+  }
+
   div.hidden {
     visibility: hidden;
   }
@@ -24,6 +30,18 @@
   }
 
   .nav-link:focus {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: bold;
+    color: hsl(0, 0%, 0%);
+  }
+
+  .nav-link:active {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: bold;
+    color: hsl(26, 100%, 55%);
+  }
+
+  .nav-link:hover {
     font-family: 'Kumbh Sans', sans-serif;
     font-weight: bold;
     color: hsl(26, 100%, 55%);
@@ -142,6 +160,16 @@
 
   .cartBtn {
     background-color: hsl(26, 100%, 55%);
+    border-style: none;
+  }
+
+  .cartBtn:hover {
+    background-color: hsl(25, 100%, 94%);
+    border-style: none;
+  }
+
+  .cartBtn:active {
+    background-color: hsl(25, 100%, 94%) !important;
     border-style: none;
   }
 
@@ -168,6 +196,12 @@
     height: 1.5rem;
   }
 
+  .avatar:active {
+    border: solid;
+    border-radius: 90%;
+    border-color: hsl(26, 100%, 55%, 1.0);
+  }
+
   div.hidden {
     visibility: hidden;
   }
@@ -183,6 +217,18 @@
   }
 
   .nav-link:focus {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: bold;
+    color: hsl(0, 0%, 0%);
+  }
+
+  .nav-link:active {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: bold;
+    color: hsl(26, 100%, 55%);
+  }
+
+  .nav-link:hover {
     font-family: 'Kumbh Sans', sans-serif;
     font-weight: bold;
     color: hsl(26, 100%, 55%);
@@ -304,6 +350,16 @@
     border-style: none;
   }
 
+  .cartBtn:hover {
+    background-color: hsl(25, 100%, 94%);
+    border-style: none;
+  }
+
+  .cartBtn:active {
+    background-color: hsl(25, 100%, 94%) !important;
+    border-style: none;
+  }
+
   .cartImg {
     filter: invert(1) brightness(2);
     padding-right: 1rem;
@@ -327,6 +383,12 @@
     height: 1.5rem;
   }
 
+  .avatar:active {
+    border: solid;
+    border-radius: 90%;
+    border-color: hsl(26, 100%, 55%, 1.0);
+  }
+
   div.hidden {
     visibility: hidden;
   }
@@ -342,6 +404,18 @@
   }
 
   .nav-link:focus {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: bold;
+    color: hsl(0, 0%, 0%);
+  }
+
+  .nav-link:active {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: bold;
+    color: hsl(26, 100%, 55%);
+  }
+
+  .nav-link:hover {
     font-family: 'Kumbh Sans', sans-serif;
     font-weight: bold;
     color: hsl(26, 100%, 55%);
@@ -463,6 +537,16 @@
     border-style: none;
   }
 
+  .cartBtn:hover {
+    background-color: hsl(25, 100%, 94%);
+    border-style: none;
+  }
+
+  .cartBtn:active {
+    background-color: hsl(25, 100%, 94%) !important;
+    border-style: none;
+  }
+
   .cartImg {
     filter: invert(1) brightness(2);
     padding-right: 1rem;
@@ -496,9 +580,17 @@
   }
 
   .navLink {
-    color: hsl(0, 0%, 0%);
+    color: gray;
     font-family: 'Kumbh Sans', sans-serif;
     font-weight: 400;
+  }
+
+  .navLink:hover {
+    color: hsl(0, 0%, 0%) !important;
+  }
+
+  .navLink:focus{
+    color: hsl(0, 0%, 0%);
   }
 
   .cartIcon {
@@ -507,6 +599,12 @@
 
   .avatar {
     height: 2rem;
+  }
+
+  .avatar:active {
+    border: solid;
+    border-radius: 90%;
+    border-color: hsl(26, 100%, 55%, 1.0);
   }
 
   /* cart modal */
@@ -605,6 +703,14 @@
     opacity: 1 !important;
   }
 
+  .carousel-indicators button:active {
+    opacity: 0.5 !important;
+  }
+
+  .carousel-indicators button:hover {
+    opacity: 0.5 !important;
+  }
+
   #btn1 {
     background-image: url('./images/image-product-1-thumbnail.jpg') !important;
   }
@@ -670,6 +776,16 @@
     padding-right: 0.5rem;
   }
 
+  .cartBtn:hover {
+    background-color: hsl(25, 100%, 94%);
+    border-style: none;
+  }
+
+  .cartBtn:active {
+    background-color: hsl(25, 100%, 94%) !important;
+    border-style: none;
+  }
+
   .cartImg {
     filter: invert(1) brightness(2);
     padding-right: 1rem;
@@ -695,9 +811,17 @@
   }
 
   .navLink {
-    color: hsl(0, 0%, 0%);
+    color: gray;
     font-family: 'Kumbh Sans', sans-serif;
     font-weight: 400;
+  }
+
+  .navLink:hover {
+    color: hsl(0, 0%, 0%) !important;
+  }
+
+  .navLink:focus{
+    color: hsl(0, 0%, 0%);
   }
 
   .cartIcon {
@@ -706,6 +830,12 @@
 
   .avatar {
     height: 2rem;
+  }
+
+  .avatar:active {
+    border: solid;
+    border-radius: 90%;
+    border-color: hsl(26, 100%, 55%, 1.0);
   }
 
   /* cart modal */
@@ -792,6 +922,14 @@
     opacity: 1 !important;
   }
 
+  .carousel-indicators button:active {
+    opacity: 0.5 !important;
+  }
+
+  .carousel-indicators button:hover {
+    opacity: 0.5 !important;
+  }
+
   #btn1 {
     background-image: url('./images/image-product-1-thumbnail.jpg') !important;
   }
@@ -860,6 +998,16 @@
     border-style: none;
   }
 
+  .cartBtn:hover {
+    background-color: hsl(25, 100%, 94%);
+    border-style: none;
+  }
+
+  .cartBtn:active {
+    background-color: hsl(25, 100%, 94%) !important;
+    border-style: none;
+  }
+
   .cartImg {
     filter: invert(1) brightness(2);
     padding-right: 1rem;
@@ -885,9 +1033,17 @@
   }
 
   .navLink {
-    color: hsl(0, 0%, 0%);
+    color: gray;
     font-family: 'Kumbh Sans', sans-serif;
     font-weight: 400;
+  }
+
+  .navLink:hover {
+    color: hsl(0, 0%, 0%) !important;
+  }
+
+  .navLink:focus{
+    color: hsl(0, 0%, 0%);
   }
 
   .cartIcon {
@@ -896,6 +1052,12 @@
 
   .avatar {
     height: 2rem;
+  }
+
+  .avatar:active {
+    border: solid;
+    border-radius: 90%;
+    border-color: hsl(26, 100%, 55%, 1.0);
   }
 
   /* cart modal */
@@ -982,6 +1144,14 @@
     opacity: 1 !important;
   }
 
+  .carousel-indicators button:active {
+    opacity: 0.5 !important;
+  }
+
+  .carousel-indicators button:hover {
+    opacity: 0.5 !important;
+  }
+
   #btn1 {
     background-image: url('./images/image-product-1-thumbnail.jpg') !important;
   }
@@ -1050,6 +1220,16 @@
     border-style: none;
   }
 
+  .cartBtn:hover {
+    background-color: hsl(25, 100%, 94%);
+    border-style: none;
+  }
+
+  .cartBtn:active {
+    background-color: hsl(25, 100%, 94%) !important;
+    border-style: none;
+  }
+
   .cartImg {
     filter: invert(1) brightness(2);
     padding-right: 1rem;
@@ -1075,9 +1255,22 @@
   }
 
   .navLink {
-    color: hsl(0, 0%, 0%);
+    color: gray;
     font-family: 'Kumbh Sans', sans-serif;
     font-weight: 400;
+  }
+
+  .navLink:hover {
+    color: hsl(0, 0%, 0%) !important;
+  }
+
+  .navLink:focus{
+    color: hsl(0, 0%, 0%);
+  }
+
+  .navLink:active{
+    color: hsl(0, 0%, 0%);
+    border-bottom: 2px solid hsl(26, 100%, 55%);
   }
 
   .cartIcon {
@@ -1086,6 +1279,12 @@
 
   .avatar {
     height: 2rem;
+  }
+
+  .avatar:active {
+    border: solid;
+    border-radius: 90%;
+    border-color: hsl(26, 100%, 55%, 1.0);
   }
 
   /* cart modal */
@@ -1172,6 +1371,14 @@
     opacity: 1 !important;
   }
 
+  .carousel-indicators button:active {
+    opacity: 0.5 !important;
+  }
+
+  .carousel-indicators button:hover {
+    opacity: 0.5 !important;
+  }
+
   #btn1 {
     background-image: url('./images/image-product-1-thumbnail.jpg') !important;
   }
@@ -1237,6 +1444,17 @@
 
   .cartBtn {
     background-color: hsl(26, 100%, 55%);
+    border-style: none;
+  }
+
+  .cartBtn:hover {
+    background-color: hsl(25, 100%, 94%);
+    border-style: none;
+    box-shadow: 0 2em 0.9em hsl(25, 100%, 94%, 0.2);
+  }
+
+  .cartBtn:active {
+    background-color: hsl(25, 100%, 94%) !important;
     border-style: none;
   }
 

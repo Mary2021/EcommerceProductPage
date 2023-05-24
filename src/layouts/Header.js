@@ -109,11 +109,11 @@ const Header = () => {
                         <Col md={2} lg={1} xl={1} className='ps-0 pe-0'>
                             <Row>
                                 <Col>
-                                    <Image src={cart} alt='cart icon' className='cartIcon' onClick={handleOpen} />
+                                    <Image src={cart} type="button" alt='cart icon' className='cartIcon' onClick={handleOpen} />
                                     {openCart}
                                 </Col>
                                 <Col>
-                                    <Image src={avatar} alt='avatar icon' className='avatar' />
+                                    <Image src={avatar} type="button" alt='avatar icon' className='avatar' />
                                 </Col>
                             </Row>
                         </Col>
@@ -134,11 +134,11 @@ const Header = () => {
                     </Col>
                     <Col className='ps-0' id='imgContainer'>
                         {/* */}
-                        <Image src={cart} alt='cart icon' onClick={handleOpen} />
+                        <Image src={cart} type="button" alt='cart icon' onClick={handleOpen} />
                         {openCart}
                     </Col>
                     <Col className='ps-0 pe-0'>
-                        <Image fluid={true} src={avatar} alt='avatar icon' className='avatar' />
+                        <Image fluid={true} type="button" src={avatar} alt='avatar icon' className='avatar' />
                     </Col>
                 </Row>
                 <Offcanvas show={show} placement={offcanvasPlacement()} className={widthClassname()}>
