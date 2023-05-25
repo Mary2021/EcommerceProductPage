@@ -9,6 +9,8 @@ import plus from './../images/icon-plus.svg'
 import cart from './../images/icon-cart.svg'
 
 const Main = () => {
+    const [count, setCount] = useState(0);
+
     let [dimensions, setDimensions] = useState({
         height: window.innerHeight,
         width: window.innerWidth
@@ -49,6 +51,14 @@ const Main = () => {
         element4.setAttribute('id','btn4')
     }
     })
+
+    const handlePlus = () => {
+        setCount(count +1);
+    }
+
+    const handleMinus = () => {
+        setCount(count -1);
+    }
 
     if (window.outerWidth >= 768) {
         return (
@@ -112,9 +122,9 @@ const Main = () => {
                                         <Col md={5} lg={5} xl={4}>
                                             <div>
                                                 <ButtonGroup className="mb-2 w-100" size="lg">
-                                                    <Button className='bg-light border-light'><img src={minus}></img></Button>
-                                                    <InputGroup.Text id="btnGroupAddon2" className="square rounded-0 bg-light  border-light">0</InputGroup.Text>
-                                                    <Button className='bg-light border-light'><img src={plus}></img></Button>
+                                                    <Button id='minus' className='bg-light border-light' onClick={() => handleMinus()}><img src={minus}></img></Button>
+                                                    <InputGroup.Text id="btnGroupAddon2" className="square rounded-0 bg-light  border-light">{count}</InputGroup.Text>
+                                                    <Button id='plus' className='bg-light border-light' onClick={() => handlePlus()}><img src={plus}></img></Button>
                                                 </ButtonGroup>
                                             </div>
                                         </Col>
@@ -185,9 +195,9 @@ const Main = () => {
                         </Row>
                         <div>
                             <ButtonGroup className="mb-2 w-100" size="lg">
-                                <Button className='bg-light border-light'><img src={minus}></img></Button>
-                                <InputGroup.Text id="btnGroupAddon2" className="square rounded-0 bg-light border-light w-75 quantity">0</InputGroup.Text>
-                                <Button className='bg-light border-light'><img src={plus}></img></Button>
+                                <Button className='bg-light border-light' onClick={() => handleMinus()}><img src={minus}></img></Button>
+                                <InputGroup.Text id="btnGroupAddon2" className="square rounded-0 bg-light border-light w-75 quantity">{count}</InputGroup.Text>
+                                <Button className='bg-light border-light' onClick={() => handlePlus()}><img src={plus}></img></Button>
                             </ButtonGroup>
                         </div>
                         <Button className='cartBtn w-100' size="lg">
