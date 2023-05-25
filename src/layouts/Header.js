@@ -84,25 +84,25 @@ const Header = () => {
             <header>
                 <Container className='headerContainer ps-0 pe-0'>
                     <Row>
-                        <Col md={3} lg={3} xl={2} className='logo' >
+                        <Col md={3} lg={2} xl={2} className='logo' >
                             <Image src={logo} alt='Sneakers logo' />
                         </Col>
-                        <Col md={7} lg={8} xl={9} className='pe-0 linkList'>
+                        <Col md={7} lg={9} xl={9} className='pe-0 linkList'>
                             <Nav defaultActiveKey="/home" as="ul">
                                 <Nav.Item as="li">
-                                    <Nav.Link href="/home" className='navLink pe-0'>Collections</Nav.Link>
+                                    <Nav.Link href="/home" className='navLink ps-1 pe-1'>Collections</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item as="li">
-                                    <Nav.Link eventKey="link-1" className='navLink pe-0'>Men</Nav.Link>
+                                    <Nav.Link eventKey="link-1" className='navLink ps-1 pe-1'>Men</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item as="li">
-                                    <Nav.Link eventKey="link-2" className='navLink pe-0'>Women</Nav.Link>
+                                    <Nav.Link eventKey="link-2" className='navLink ps-1 pe-1'>Women</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item as="li">
-                                    <Nav.Link eventKey="link-2" className='navLink pe-0'>About</Nav.Link>
+                                    <Nav.Link eventKey="link-2" className='navLink ps-1 pe-1'>About</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item as="li">
-                                    <Nav.Link eventKey="link-2" className='navLink'>Contact</Nav.Link>
+                                    <Nav.Link eventKey="link-2" className='navLink ps-1 pe-1'>Contact</Nav.Link>
                                 </Nav.Item>
                             </Nav>
                         </Col>

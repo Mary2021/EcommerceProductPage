@@ -1,4 +1,4 @@
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 426px) {
 
   /* header and nav */
   .headerContainer {
@@ -54,7 +54,7 @@
 
   .modal-content {
     width: 95%; 
-    height: 40vh;
+    height: 15em;
   }
 
   .modal.show {
@@ -185,7 +185,7 @@
   }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (min-width: 427px) and (max-width: 576px) {
 
   /* header and nav */
   .headerContainer {
@@ -241,7 +241,7 @@
 
   .modal-content {
     width: 95%; 
-    height: 40vh;
+    height: 18em;
   }
 
   .modal.show {
@@ -428,7 +428,7 @@
 
   .modal-content {
     width: 70%; 
-    height: 30vh;
+    height: 15em;
   }
 
   .modal.show {
@@ -593,6 +593,11 @@
     color: hsl(0, 0%, 0%);
   }
 
+  .navLink:active{
+    color: hsl(0, 0%, 0%);
+    border-bottom: 2px solid hsl(26, 100%, 55%);
+  }
+
   .cartIcon {
     padding-right: 20%;
   }
@@ -614,7 +619,7 @@
 
   .modal-content {
     width: 70%; 
-    height: 30vh;
+    height: 15em;
   }
 
   .modal.show {
@@ -824,6 +829,11 @@
     color: hsl(0, 0%, 0%);
   }
 
+  .navLink:active{
+    color: hsl(0, 0%, 0%);
+    border-bottom: 2px solid hsl(26, 100%, 55%);
+  }
+
   .cartIcon {
     padding-right: 20%;
   }
@@ -845,7 +855,7 @@
 
   .modal-content {
     width: 70%; 
-    height: 30vh;
+    height: 15em;
   }
 
   .modal.show {
@@ -1046,6 +1056,11 @@
     color: hsl(0, 0%, 0%);
   }
 
+  .navLink:active{
+    color: hsl(0, 0%, 0%);
+    border-bottom: 2px solid hsl(26, 100%, 55%);
+  }
+
   .cartIcon {
     padding-right: 20%;
   }
@@ -1067,7 +1082,7 @@
 
   .modal-content {
     width: 70%;
-    height: 30vh;
+    height: 15em;
   }
 
   .modal.show {
@@ -1294,7 +1309,7 @@
 
   .modal-content {
     width: 70%;
-    height: 30vh;
+    height: 15em;
   }
 
   .modal.show {
