@@ -107,6 +107,15 @@
     border-style: none;
   }
 
+  .cartBadge {
+    color:hsl(0, 0%, 100%) !important;
+    background: hsl(26, 100%, 55%, 1.0) !important;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    z-index: 2;
+  }
+
   /* main */
   .carousel-control-prev-icon {
     background-image: url('./images/icon-previous.svg');
@@ -140,7 +149,7 @@
     padding-right: 0%;
   }
 
-  .badge {
+  .discountBadge {
     color: hsl(26, 100%, 55%);
     background: hsl(25, 100%, 94%);
   }
@@ -294,6 +303,15 @@
     border-style: none;
   }
 
+  .cartBadge {
+    color:hsl(0, 0%, 100%) !important;
+    background: hsl(26, 100%, 55%, 1.0) !important;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    z-index: 2;
+  }
+
   /* main */
   .carousel-control-prev-icon {
     background-image: url('./images/icon-previous.svg');
@@ -327,7 +345,7 @@
     padding-right: 0%;
   }
 
-  .badge {
+  .discountBadge {
     color: hsl(26, 100%, 55%);
     background: hsl(25, 100%, 94%);
   }
@@ -481,6 +499,15 @@
     border-style: none;
   }
 
+  .cartBadge {
+    color:hsl(0, 0%, 100%) !important;
+    background: hsl(26, 100%, 55%, 1.0) !important;
+    position: absolute;
+    top: 20px;
+    left: 200px;
+    z-index: 2;
+  }
+
   /* main */
   .carousel-control-prev-icon {
     background-image: url('./images/icon-previous.svg');
@@ -514,7 +541,7 @@
     padding-right: 0%;
   }
 
-  .badge {
+  .discountBadge {
     color: hsl(26, 100%, 55%);
     background: hsl(25, 100%, 94%);
   }
@@ -672,6 +699,15 @@
     border-style: none;
   }
 
+  .cartBadge {
+    color:hsl(0, 0%, 100%) !important;
+    background: hsl(26, 100%, 55%, 1.0) !important;
+    position: absolute;
+    top: 20px;
+    left: 650px;
+    z-index: 2;
+  }
+
   /* main */
   .mainContainer {
     padding-top: 5%;
@@ -760,7 +796,7 @@
     padding-right: 0%;
   }
 
-  .badge {
+  .discountBadge {
     color: hsl(26, 100%, 55%);
     background: hsl(25, 100%, 94%);
   }
@@ -908,6 +944,15 @@
     border-style: none;
   }
 
+  .cartBadge {
+    color:hsl(0, 0%, 100%) !important;
+    background: hsl(26, 100%, 55%, 1.0) !important;
+    position: absolute;
+    top: 20px;
+    left: 900px;
+    z-index: 2;
+  }
+
   /* main */
   .mainContainer {
     padding-top: 5%;
@@ -989,7 +1034,7 @@
     padding-right: 0%;
   }
 
-  .badge {
+  .discountBadge {
     color: hsl(26, 100%, 55%);
     background: hsl(25, 100%, 94%);
   }
@@ -1135,6 +1180,15 @@
     border-style: none;
   }
 
+  .cartBadge {
+    color:hsl(0, 0%, 100%) !important;
+    background: hsl(26, 100%, 55%, 1.0) !important;
+    position: absolute;
+    top: 20px;
+    left: 1070px;
+    z-index: 2;
+  }
+
   /* main */
   .mainContainer {
     padding-top: 5%;
@@ -1216,7 +1270,7 @@
     padding-right: 0%;
   }
 
-  .badge {
+  .discountBadge {
     color: hsl(26, 100%, 55%);
     background: hsl(25, 100%, 94%);
   }
@@ -1362,6 +1416,15 @@
     border-style: none;
   }
 
+  .cartBadge {
+    color:hsl(0, 0%, 100%) !important;
+    background: hsl(26, 100%, 55%, 1.0) !important;
+    position: absolute;
+    top: 20px;
+    left: 1240px;
+    z-index: 2;
+  }
+
   /* main */
   .mainContainer {
     padding-top: 5%;
@@ -1443,7 +1506,7 @@
     padding-right: 0%;
   }
 
-  .badge {
+  .discountBadge {
     color: hsl(26, 100%, 55%);
     background: hsl(25, 100%, 94%);
   }

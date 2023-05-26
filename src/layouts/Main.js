@@ -8,8 +8,20 @@ import minus from './../images/icon-minus.svg'
 import plus from './../images/icon-plus.svg'
 import cart from './../images/icon-cart.svg'
 
-const Main = () => {
+const Main = (props) => {
     const [count, setCount] = useState(0);
+
+    const handlePlus = () => {
+        setCount(count +1);
+    }
+
+    const handleMinus = () => {
+        setCount(count => Math.max(count-1, 0));
+    }
+
+    const addToChart = () => {
+        props.sendData(count);
+    }
 
     let [dimensions, setDimensions] = useState({
         height: window.innerHeight,
@@ -51,14 +63,6 @@ const Main = () => {
         element4.setAttribute('id','btn4')
     }
     })
-
-    const handlePlus = () => {
-        setCount(count +1);
-    }
-
-    const handleMinus = () => {
-        setCount(count -1);
-    }
 
     if (window.outerWidth >= 768) {
         return (
@@ -115,7 +119,7 @@ const Main = () => {
                                     </p>
                                     <Row className='ms-0 me-0 mb-2 align-items-center'>
                                         <Col md={3} lg={3} xl={2} className='lowerPrice'>$125.00</Col>
-                                        <Col md={2} lg={2} xl={2}><Badge className='badge' bg='false'>50%</Badge></Col>
+                                        <Col md={2} lg={2} xl={2}><Badge className='discountBadge' bg='false'>50%</Badge></Col>
                                     </Row>
                                     <Row className='ms-0 me-0 mb-4 align-items-center regularPrice'>$250.00</Row>
                                     <Row>
@@ -129,7 +133,7 @@ const Main = () => {
                                             </div>
                                         </Col>
                                         <Col md={7} lg={7} xl={8}>
-                                            <Button className='cartBtn w-100' size="lg">
+                                            <Button className='cartBtn w-100' size="lg" onClick={() => addToChart()}>
                                                 <Image src={cart} alt='cart icon' className='cartImg' />Add to cart
                                             </Button>
                                         </Col>
@@ -190,7 +194,7 @@ const Main = () => {
                         </p>
                         <Row className='ms-0 me-0 mb-3 align-items-center'>
                             <Col xs={3} className='lowerPrice'>$125.00</Col>
-                            <Col xs={7}><Badge className='badge' bg='false'>50%</Badge></Col>
+                            <Col xs={7}><Badge className='discountBadge' bg='false'>50%</Badge></Col>
                             <Col xs={2} className='regularPrice'>$250.00</Col>
                         </Row>
                         <div>
@@ -200,7 +204,7 @@ const Main = () => {
                                 <Button className='bg-light border-light' onClick={() => handlePlus()}><img src={plus}></img></Button>
                             </ButtonGroup>
                         </div>
-                        <Button className='cartBtn w-100' size="lg">
+                        <Button className='cartBtn w-100' size="lg" onClick={() => addToChart()}>
                             <Image src={cart} alt='cart icon' className='cartImg' />Add to cart
                         </Button>
                     </Container>
