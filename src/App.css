@@ -95,6 +95,13 @@
     font-family: 'Kumbh Sans', sans-serif;
   }
 
+  .emptyModalText {
+    text-align: center;
+    padding-right: 0%;
+    padding-left: 0%;
+    font-family: 'Kumbh Sans', sans-serif;
+  }
+
   .modalDelBtn {
     padding-left: 1%;
     padding-right: 0%;
@@ -111,8 +118,8 @@
     color:hsl(0, 0%, 100%) !important;
     background: hsl(26, 100%, 55%, 1.0) !important;
     position: absolute;
-    top: 5px;
-    left: 10px;
+    top: 2%;
+    left: 80%;
     z-index: 2;
   }
 
@@ -291,6 +298,13 @@
     font-family: 'Kumbh Sans', sans-serif;
   }
 
+  .emptyModalText {
+    text-align: center;
+    padding-right: 0%;
+    padding-left: 0%;
+    font-family: 'Kumbh Sans', sans-serif;
+  }
+
   .modalDelBtn {
     padding-left: 1%;
     padding-right: 0%;
@@ -307,8 +321,8 @@
     color:hsl(0, 0%, 100%) !important;
     background: hsl(26, 100%, 55%, 1.0) !important;
     position: absolute;
-    top: 5px;
-    left: 10px;
+    top: 3%;
+    left: 81%;
     z-index: 2;
   }
 
@@ -487,6 +501,13 @@
     font-family: 'Kumbh Sans', sans-serif;
   }
 
+  .emptyModalText {
+    text-align: center;
+    padding-right: 0%;
+    padding-left: 0%;
+    font-family: 'Kumbh Sans', sans-serif;
+  }
+
   .modalDelBtn {
     padding-left: 1%;
     padding-right: 0%;
@@ -503,8 +524,8 @@
     color:hsl(0, 0%, 100%) !important;
     background: hsl(26, 100%, 55%, 1.0) !important;
     position: absolute;
-    top: 20px;
-    left: 200px;
+    top: 3%;
+    left: 80%;
     z-index: 2;
   }
 
@@ -682,6 +703,13 @@
 
   .modalText {
     text-align: start;
+    padding-right: 0%;
+    padding-left: 0%;
+    font-family: 'Kumbh Sans', sans-serif;
+  }
+
+  .emptyModalText {
+    text-align: center;
     padding-right: 0%;
     padding-left: 0%;
     font-family: 'Kumbh Sans', sans-serif;
@@ -932,6 +960,13 @@
     font-family: 'Kumbh Sans', sans-serif;
   }
 
+  .emptyModalText {
+    text-align: center;
+    padding-right: 0%;
+    padding-left: 0%;
+    font-family: 'Kumbh Sans', sans-serif;
+  }
+
   .modalDelBtn {
     padding-left: 1%;
     padding-right: 0%;
@@ -1168,6 +1203,13 @@
     font-family: 'Kumbh Sans', sans-serif;
   }
 
+  .emptyModalText {
+    text-align: center;
+    padding-right: 0%;
+    padding-left: 0%;
+    font-family: 'Kumbh Sans', sans-serif;
+  }
+
   .modalDelBtn {
     padding-left: 1%;
     padding-right: 0%;
@@ -1399,6 +1441,13 @@
 
   .modalText {
     text-align: start;
+    padding-right: 0%;
+    padding-left: 0%;
+    font-family: 'Kumbh Sans', sans-serif;
+  }
+
+  .emptyModalText {
+    text-align: center;
     padding-right: 0%;
     padding-left: 0%;
     font-family: 'Kumbh Sans', sans-serif;

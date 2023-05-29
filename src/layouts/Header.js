@@ -48,7 +48,7 @@ const Header = () => {
             </Modal.Header>
             <Modal.Body>
                 <Row className='modalRow'>
-                    <Col xs={12} sm={12} md={12} lg={12} xl={12} className='modalText'>Your cart is empty.</Col>
+                    <Col xs={12} sm={12} md={12} lg={12} xl={12} className='emptyModalText'>Your cart is empty.</Col>
                 </Row>
                 <Button variant="primary" onClick={handleHide} className='modalCheckoutBtn'>
                     Checkout
@@ -169,7 +169,8 @@ const Header = () => {
                     <Col className='ps-0' id='imgContainer'>
                         {/* */}
                         <Image src={cart} type="button" alt='cart icon' onClick={handleOpen} />
-                        {openCart}
+                        {openCart()}
+                        {showBadge()}
                     </Col>
                     <Col className='ps-0 pe-0'>
                         <Image fluid={true} type="button" src={avatar} alt='avatar icon' className='avatar' />
