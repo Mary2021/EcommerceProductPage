@@ -11,7 +11,7 @@ import del from './../images/icon-delete.svg'
 import thumb from './../images/image-product-1-thumbnail.jpg'
 import Badge from 'react-bootstrap/Badge';
 import { useContext } from 'react';
-import { Context } from './../components/context';
+import { CountContext, AddContext } from './../components/context';
 
 const Header = () => {
     const [show, setShow] = useState(false);
@@ -22,52 +22,72 @@ const Header = () => {
     const handleHide = () => setOpen(false);
     const handleOpen = () => setOpen(true);
 
-    const openCart = () => {
-        console.log(value)
-        if (value!=0) {
-            return (<Modal show={open} onHide={handleHide} >
-                <Modal.Header>
-                    <Modal.Title>Cart</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                    <Row className='modalRow'>
-                        <Col xs={3} sm={2} md={3} lg={3} xl={3} className='modalThumbCol'><Image src={thumb} alt='Delete button' className='modalThumb' /></Col>
-                        <Col xs={7} sm={6} md={8} lg={8} xl={8} className='modalText'>Fall Limited Edition Sneakers $125.00</Col>
-                        <Col xs={1} sm={1} md={1} lg={1} xl={1} className='modalDelBtn'><Image src={del} alt='Delete button' /></Col>
-                    </Row>
-                    <Button variant="primary" onClick={handleHide} className='modalCheckoutBtn'>
-                        Checkout
-                    </Button>
-                </Modal.Body>
-            </Modal>)
-        } else {
+    const [count, setCount] = useContext(CountContext);
+    const [add, setAdd] = useContext(AddContext);
+
+    const showBadge = () => {
+        if (add == true && count != 0) {
             return (
-            <Modal show={open} onHide={handleHide} >
-            <Modal.Header>
-                <Modal.Title>Cart</Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-                <Row className='modalRow'>
-                    <Col xs={12} sm={12} md={12} lg={12} xl={12} className='emptyModalText'>Your cart is empty.</Col>
-                </Row>
-                <Button variant="primary" onClick={handleHide} className='modalCheckoutBtn'>
-                    Checkout
-                </Button>
-            </Modal.Body>
-        </Modal>)
+                <Badge pill className='cartBadge'>
+                    {count}
+                </Badge>)
+        } else {
+            return null
         }
     }
 
-    const value = useContext(Context);
-    const showBadge = () => {
-        if (value!=0){
+    const openCart = () => {
+        if (add == true) {
+            if (count != 0) {
+                let totalPrice = ''
+                let txt = ''
+                let priceLabel = ''
+                if (count == 1) {
+                    txt = null
+                } else {
+                    totalPrice = (125 * count).toFixed(2);
+                    priceLabel = '$' + totalPrice
+                    txt = ' ' + 'x' + ' ' + count + ' '
+                }
+
+                return (<Modal show={open} onHide={handleHide} >
+                    <Modal.Header>
+                        <Modal.Title>Cart</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <Row className='modalRow'>
+                            <Col xs={2} sm={2} md={3} lg={3} xl={3} className='modalThumbCol'><Image src={thumb} alt='Product thumbnail' className='modalThumb' /></Col>
+                            <Col xs={8} sm={6} md={8} lg={8} xl={8} className='modalText'>Fall Limited Edition Sneakers $125.00 {txt}<b>{priceLabel}</b></Col>
+                            <Col xs={1} sm={1} md={1} lg={1} xl={1} className='modalDelBtn'><Image type="button" src={del} alt='Delete button' onClick={() => handelDelete()} /></Col>
+                        </Row>
+                        <Button variant="primary" onClick={handleHide} className='modalCheckoutBtn'>
+                            Checkout
+                        </Button>
+                    </Modal.Body>
+                </Modal>)
+            }
+        } else {
             return (
-                <Badge pill className='cartBadge'>
-                    {value}
-                </Badge>)
-        } else { 
-            return null
+                <Modal show={open} onHide={handleHide} >
+                    <Modal.Header>
+                        <Modal.Title>Cart</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <Row className='modalRow'>
+                            <Col xs={12} sm={12} md={12} lg={12} xl={12} className='emptyModalText'>Your cart is empty.</Col>
+                        </Row>
+                        <Button variant="primary" onClick={handleHide} className='modalCheckoutBtn'>
+                            Checkout
+                        </Button>
+                    </Modal.Body>
+                </Modal>)
         }
+
+    }
+
+    const handelDelete = () => {
+        setCount(0)
+        setAdd(false)
     }
 
     const offcanvasPlacement = () => {

@@ -7,10 +7,13 @@ import pic4 from './../images/image-product-4.jpg'
 import minus from './../images/icon-minus.svg'
 import plus from './../images/icon-plus.svg'
 import cart from './../images/icon-cart.svg'
+import { useContext } from 'react';
+import { CountContext, AddContext } from './../components/context';
 
 const Main = (props) => {
-    const [count, setCount] = useState(0);
-
+    const [count, setCount] = useContext(CountContext);
+    const [add, setAdd] = useContext(AddContext);
+    
     const handlePlus = () => {
         setCount(count +1);
     }
@@ -20,7 +23,7 @@ const Main = (props) => {
     }
 
     const addToChart = () => {
-        props.sendData(count);
+        setAdd(true)
     }
 
     let [dimensions, setDimensions] = useState({

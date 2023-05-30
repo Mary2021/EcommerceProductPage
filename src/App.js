@@ -5,14 +5,11 @@ import Container from 'react-bootstrap/esm/Container'
 import Header from './layouts/Header'
 import Main from './layouts/Main'
 import ThemeProvider from 'react-bootstrap/ThemeProvider'
-import { Context } from './components/context';
+import { CountContext, AddContext } from './components/context';
 
 function App() {
-  const [data, setData] = useState(0)
-
-  const sendData = (data) => {
-    setData(data)
-  }
+  const [count, setCount] = useState(0)
+  const [add, setAdd] = useState(false)
 
   return (
     <ThemeProvider
@@ -20,10 +17,12 @@ function App() {
       minBreakpoint="xs"
     >
       <Container className='appContainer p-0'>
-      <Context.Provider value={data}>
+      <AddContext.Provider value={[add, setAdd]}>
+      <CountContext.Provider value={[count, setCount]}>
         <Header />
-        </Context.Provider>
-        <Main sendData={sendData} />
+        <Main />
+        </CountContext.Provider>
+        </AddContext.Provider>
         <Container>
           <footer className='footerContainer'>
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer" >Frontend Mentor</a>.

@@ -1,4 +1,5 @@
 // context.js
 import { createContext } from 'react';
 
-export const Context = createContext('Default Value');
+export const CountContext = createContext();
+export const AddContext = createContext();

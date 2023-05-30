@@ -22,8 +22,6 @@ Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - Switch the large product image by clicking on the small thumbnail images
-
-Yet to come features:
 - Users can see hover states for all interactive elements on the page
 - Open a lightbox gallery by clicking on the large product image
 - Add items to the cart
@@ -58,6 +56,7 @@ Yet to come features:
 - [Carosel indicators](https://stackoverflow.com/questions/34808477/can-i-customize-carousel-indicators-in-react-bootstrap) 
 - [React border component](https://mdbootstrap.com/docs/react/utilities/borders/)
 - [How to Customize the React Carousel Component](https://www.youtube.com/watch?v=hVeXkSCuu5k)
+- [Creating context](https://react.dev/reference/react/createContext)
 
 ## Author
 
