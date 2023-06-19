@@ -1,28 +1,25 @@
-import React, { useState } from 'react'
+import React from 'react'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 import Container from 'react-bootstrap/esm/Container'
 import Header from './layouts/Header'
 import Main from './layouts/Main'
 import ThemeProvider from 'react-bootstrap/ThemeProvider'
-import { CountContext, AddContext } from './components/context';
+//Store
+import { store } from './app/store';
+import { Provider } from 'react-redux';
 
 function App() {
-  const [count, setCount] = useState(0)
-  const [add, setAdd] = useState(false)
-
   return (
     <ThemeProvider
       breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs']}
       minBreakpoint="xs"
     >
       <Container className='appContainer p-0'>
-      <AddContext.Provider value={[add, setAdd]}>
-      <CountContext.Provider value={[count, setCount]}>
+      <Provider store={store}>
         <Header />
         <Main />
-        </CountContext.Provider>
-        </AddContext.Provider>
+        </Provider>
         <Container>
           <footer className='footerContainer'>
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer" >Frontend Mentor</a>.

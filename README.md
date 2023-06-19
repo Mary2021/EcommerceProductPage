@@ -46,6 +46,7 @@ Users should be able to:
 - Mobile-first workflow
 - [Create React App](https://create-react-app.dev/docs/getting-started). [Read more](#getting-started-with-create-react-app)
 - [React Bootstrap](https://react-bootstrap.github.io/getting-started/introduction), [See also](https://react-bootstrap.netlify.app/)
+- Redux npm install @reduxjs/toolkit , npm i react-redux
 
 
 ### Useful links

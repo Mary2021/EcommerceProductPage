@@ -10,8 +10,8 @@ import close from './../images/icon-close.svg'
 import del from './../images/icon-delete.svg'
 import thumb from './../images/image-product-1-thumbnail.jpg'
 import Badge from 'react-bootstrap/Badge';
-import { useContext } from 'react';
-import { CountContext, AddContext } from './../components/context';
+import { useSelector, useDispatch } from "react-redux";
+import { reset } from "../counterSlice";
 
 const Header = () => {
     const [show, setShow] = useState(false);
@@ -22,14 +22,14 @@ const Header = () => {
     const handleHide = () => setOpen(false);
     const handleOpen = () => setOpen(true);
 
-    const [count, setCount] = useContext(CountContext);
-    const [add, setAdd] = useContext(AddContext);
+    const amount = useSelector((state) => state.counter.amount);
+    const dispatch = useDispatch();
 
     const showBadge = () => {
-        if (add == true && count != 0) {
+        if (amount != 0) {
             return (
                 <Badge pill className='cartBadge'>
-                    {count}
+                    {amount}
                 </Badge>)
         } else {
             return null
@@ -37,35 +37,33 @@ const Header = () => {
     }
 
     const openCart = () => {
-        if (add == true) {
-            if (count != 0) {
-                let totalPrice = ''
-                let txt = ''
-                let priceLabel = ''
-                if (count == 1) {
-                    txt = null
-                } else {
-                    totalPrice = (125 * count).toFixed(2);
-                    priceLabel = '$' + totalPrice
-                    txt = ' ' + 'x' + ' ' + count + ' '
-                }
-
-                return (<Modal show={open} onHide={handleHide} >
-                    <Modal.Header>
-                        <Modal.Title>Cart</Modal.Title>
-                    </Modal.Header>
-                    <Modal.Body>
-                        <Row className='modalRow'>
-                            <Col xs={2} sm={2} md={3} lg={3} xl={3} className='modalThumbCol'><Image src={thumb} alt='Product thumbnail' className='modalThumb' /></Col>
-                            <Col xs={8} sm={6} md={8} lg={8} xl={8} className='modalText'>Fall Limited Edition Sneakers $125.00 {txt}<b>{priceLabel}</b></Col>
-                            <Col xs={1} sm={1} md={1} lg={1} xl={1} className='modalDelBtn'><Image type="button" src={del} alt='Delete button' onClick={() => handelDelete()} /></Col>
-                        </Row>
-                        <Button variant="primary" onClick={handleHide} className='modalCheckoutBtn'>
-                            Checkout
-                        </Button>
-                    </Modal.Body>
-                </Modal>)
+        if (amount != 0) {
+            let totalPrice = ''
+            let txt = ''
+            let priceLabel = ''
+            if (amount == 1) {
+                txt = null
+            } else {
+                totalPrice = (125 * amount).toFixed(2);
+                priceLabel = '$' + totalPrice
+                txt = ' ' + 'x' + ' ' + amount + ' '
             }
+
+            return (<Modal show={open} onHide={handleHide} >
+                <Modal.Header>
+                    <Modal.Title>Cart</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <Row className='modalRow'>
+                        <Col xs={2} sm={2} md={3} lg={3} xl={3} className='modalThumbCol'><Image src={thumb} alt='Product thumbnail' className='modalThumb' /></Col>
+                        <Col xs={8} sm={6} md={8} lg={8} xl={8} className='modalText'>Fall Limited Edition Sneakers $125.00 {txt}<b>{priceLabel}</b></Col>
+                        <Col xs={1} sm={1} md={1} lg={1} xl={1} className='modalDelBtn'><Image type="button" src={del} alt='Delete button' onClick={() => dispatch(reset())} /></Col>
+                    </Row>
+                    <Button variant="primary" onClick={handleHide} className='modalCheckoutBtn'>
+                        Checkout
+                    </Button>
+                </Modal.Body>
+            </Modal>)
         } else {
             return (
                 <Modal show={open} onHide={handleHide} >
@@ -83,11 +81,6 @@ const Header = () => {
                 </Modal>)
         }
 
-    }
-
-    const handelDelete = () => {
-        setCount(0)
-        setAdd(false)
     }
 
     const offcanvasPlacement = () => {
@@ -131,6 +124,8 @@ const Header = () => {
             window.removeEventListener('resize', handleResize)
         }
     })
+
+    console.log(amount)
 
     if (window.outerWidth >= 768) {
         return (
