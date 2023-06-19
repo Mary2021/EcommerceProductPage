@@ -7,24 +7,16 @@ import pic4 from './../images/image-product-4.jpg'
 import minus from './../images/icon-minus.svg'
 import plus from './../images/icon-plus.svg'
 import cart from './../images/icon-cart.svg'
-import { useContext } from 'react';
-import { CountContext, AddContext } from './../components/context';
+import { useSelector, useDispatch } from "react-redux";
+import {
+    increment,
+    decrement,
+    setAmount
+} from "../counterSlice";
 
 const Main = (props) => {
-    const [count, setCount] = useContext(CountContext);
-    const [add, setAdd] = useContext(AddContext);
-    
-    const handlePlus = () => {
-        setCount(count +1);
-    }
-
-    const handleMinus = () => {
-        setCount(count => Math.max(count-1, 0));
-    }
-
-    const addToChart = () => {
-        setAdd(true)
-    }
+    const count = useSelector((state) => state.counter.count);
+    const dispatch = useDispatch();
 
     let [dimensions, setDimensions] = useState({
         height: window.innerHeight,
@@ -48,23 +40,23 @@ const Main = (props) => {
 
     //get carousel indicator button by aria-label, set id to button element and set background image with id
     useEffect(() => {
-    let element1 = document.querySelector('[aria-label="Slide 1"]')
-    let element2 = document.querySelector('[aria-label="Slide 2"]')
-    let element3 = document.querySelector('[aria-label="Slide 3"]')
-    let element4 = document.querySelector('[aria-label="Slide 4"]')
+        let element1 = document.querySelector('[aria-label="Slide 1"]')
+        let element2 = document.querySelector('[aria-label="Slide 2"]')
+        let element3 = document.querySelector('[aria-label="Slide 3"]')
+        let element4 = document.querySelector('[aria-label="Slide 4"]')
 
-    if (element1!=null && window.outerWidth >= 768 ) {
-        element1.setAttribute('id','btn1')
-    }
-    if ((element2!=null && window.outerWidth >= 768 )) {
-        element2.setAttribute('id','btn2')
-    }
-    if ((element3!=null && window.outerWidth >= 768 )) {
-        element3.setAttribute('id','btn3')
-    }
-    if ((element4!=null && window.outerWidth >= 768 )) {
-        element4.setAttribute('id','btn4')
-    }
+        if (element1 != null && window.outerWidth >= 768) {
+            element1.setAttribute('id', 'btn1')
+        }
+        if ((element2 != null && window.outerWidth >= 768)) {
+            element2.setAttribute('id', 'btn2')
+        }
+        if ((element3 != null && window.outerWidth >= 768)) {
+            element3.setAttribute('id', 'btn3')
+        }
+        if ((element4 != null && window.outerWidth >= 768)) {
+            element4.setAttribute('id', 'btn4')
+        }
     })
 
     if (window.outerWidth >= 768) {
@@ -127,16 +119,16 @@ const Main = (props) => {
                                     <Row className='ms-0 me-0 mb-4 align-items-center regularPrice'>$250.00</Row>
                                     <Row>
                                         <Col md={5} lg={5} xl={4}>
-                                            <div>
+                                            < div >
                                                 <ButtonGroup className="mb-2 w-100" size="lg">
-                                                    <Button id='minus' className='bg-light border-light' onClick={() => handleMinus()}><img src={minus}></img></Button>
+                                                    <Button id='minus' className='bg-light border-light' onClick={() => dispatch(decrement())}><img src={minus}></img></Button>
                                                     <InputGroup.Text id="btnGroupAddon2" className="square rounded-0 bg-light  border-light">{count}</InputGroup.Text>
-                                                    <Button id='plus' className='bg-light border-light' onClick={() => handlePlus()}><img src={plus}></img></Button>
+                                                    <Button id='plus' className='bg-light border-light' onClick={() => dispatch(increment())}><img src={plus}></img></Button>
                                                 </ButtonGroup>
-                                            </div>
+                                            </div >
                                         </Col>
                                         <Col md={7} lg={7} xl={8}>
-                                            <Button className='cartBtn w-100' size="lg" onClick={() => addToChart()}>
+                                            <Button className='cartBtn w-100' size="lg" onClick={() => dispatch(setAmount())}>
                                                 <Image src={cart} alt='cart icon' className='cartImg' />Add to cart
                                             </Button>
                                         </Col>
@@ -202,19 +194,18 @@ const Main = (props) => {
                         </Row>
                         <div>
                             <ButtonGroup className="mb-2 w-100" size="lg">
-                                <Button className='bg-light border-light' onClick={() => handleMinus()}><img src={minus}></img></Button>
+                                <Button className='bg-light border-light' onClick={() => dispatch(decrement())}><img src={minus}></img></Button>
                                 <InputGroup.Text id="btnGroupAddon2" className="square rounded-0 bg-light border-light w-75 quantity">{count}</InputGroup.Text>
-                                <Button className='bg-light border-light' onClick={() => handlePlus()}><img src={plus}></img></Button>
+                                <Button className='bg-light border-light' onClick={() => dispatch(increment())}><img src={plus}></img></Button>
                             </ButtonGroup>
                         </div>
-                        <Button className='cartBtn w-100' size="lg" onClick={() => addToChart()}>
+                        <Button className='cartBtn w-100' size="lg" onClick={() => dispatch(setAmount())}>
                             <Image src={cart} alt='cart icon' className='cartImg' />Add to cart
                         </Button>
                     </Container>
                 </article>
             </main>)
     }
-
 }
 
 export default Main
