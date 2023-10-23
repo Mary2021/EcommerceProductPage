@@ -31,7 +31,6 @@ Users should be able to:
 
 ![](./design/desktop-preview.jpg)
 
-
 ### Links
 
 - [Github repo](https://github.com:Mary2021/EcommerceProductPage.git)
