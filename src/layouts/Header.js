@@ -30,7 +30,8 @@ const Header = () => {
             return (
                 <Badge pill className='cartBadge'>
                     {amount}
-                </Badge>)
+                </Badge>
+            )
         } else {
             return null
         }
@@ -127,7 +128,7 @@ const Header = () => {
 
     console.log(amount)
 
-    if (window.outerWidth >= 768) {
+    if (window.innerWidth >= 768) {
         return (
             <header>
                 <Container className='headerContainer ps-0 pe-0'>
@@ -135,10 +136,10 @@ const Header = () => {
                         <Col md={3} lg={2} xl={2} className='logo' >
                             <Image src={logo} alt='Sneakers logo' />
                         </Col>
-                        <Col md={7} lg={9} xl={9} className='pe-0 linkList'>
-                            <Nav defaultActiveKey="/home" as="ul">
+                        <Col md={7} lg={8} xl={8} className='pe-0 linkList'>
+                            <Nav defaultActiveKey="/EcommerceProductPage/" as="ul">
                                 <Nav.Item as="li">
-                                    <Nav.Link href="/home" className='navLink ps-1 pe-1'>Collections</Nav.Link>
+                                    <Nav.Link href="/EcommerceProductPage/" className='navLink ps-1 pe-1'>Collections</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item as="li">
                                     <Nav.Link eventKey="link-1" className='navLink ps-1 pe-1'>Men</Nav.Link>
@@ -154,14 +155,14 @@ const Header = () => {
                                 </Nav.Item>
                             </Nav>
                         </Col>
-                        <Col md={2} lg={1} xl={1} className='ps-0 pe-0'>
+                        <Col md={2} lg={2} xl={2} className='ps-0 pe-0'>
                             <Row>
-                                <Col>
+                                <Col className='ps-lg-5 ps-md-2 pe-md-0'>
                                     <Image src={cart} type="button" alt='cart icon' className='cartIcon' onClick={handleOpen} />
-                                    {openCart()}
                                     {showBadge()}
+                                    {openCart()} 
                                 </Col>
-                                <Col>
+                                <Col className='ps-lg-0 pe-lg-0'>
                                     <Image src={avatar} type="button" alt='avatar icon' className='avatar' />
                                 </Col>
                             </Row>
@@ -178,14 +179,13 @@ const Header = () => {
                     <Col className='pe-0'>
                         <Image src={menu} alt="Menu icon" onClick={handleShow} />
                     </Col>
-                    <Col className='col-8 p-0'>
+                    <Col className='col-6 p-0'>
                         <Image src={logo} alt='Sneakers logo' />
                     </Col>
-                    <Col className='ps-0' id='imgContainer'>
-                        {/* */}
+                    <Col className='ps-1 pe-0' id='imgContainer'>
                         <Image src={cart} type="button" alt='cart icon' onClick={handleOpen} />
-                        {openCart()}
                         {showBadge()}
+                        {openCart()}
                     </Col>
                     <Col className='ps-0 pe-0'>
                         <Image fluid={true} type="button" src={avatar} alt='avatar icon' className='avatar' />

@@ -65,7 +65,7 @@ const Main = (props) => {
                 <article>
                     <Container>
                         <Row>
-                            <Col md={5}>
+                            <Col md={5} className='ps-0 pe-0'>
                                 <figure>
                                     <Container className='p-0 w-75 ms-2 me-2 tabletFigure'>
                                         <Carousel controls={false} interval={null} >
@@ -144,7 +144,7 @@ const Main = (props) => {
             <main>
                 <article>
                     <figure>
-                        <Container className='p-0'>
+                        <Container>
                             <Carousel indicators={false}>
                                 <Carousel.Item>
                                     <img
