@@ -26,7 +26,7 @@ const Header = () => {
     const dispatch = useDispatch();
 
     const showBadge = () => {
-        if (amount != 0) {
+        if (amount !== 0) {
             return (
                 <Badge pill className='cartBadge'>
                     {amount}
@@ -38,11 +38,11 @@ const Header = () => {
     }
 
     const openCart = () => {
-        if (amount != 0) {
+        if (amount !== 0) {
             let totalPrice = ''
             let txt = ''
             let priceLabel = ''
-            if (amount == 1) {
+            if (amount === 1) {
                 txt = null
             } else {
                 totalPrice = (125 * amount).toFixed(2);
